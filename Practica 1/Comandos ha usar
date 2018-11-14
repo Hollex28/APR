@@ -1,0 +1,12 @@
+octave
+load data/mini/tr.dat
+load data/mini/trlabels.dat
+graphics_toolkit gnuplot
+plot (tr(:,1),tr(:,2),"x")
+res = svmtrain(trlabels,tr,'-t 0 -c 10');
+lagrange = res.sv_coef;
+vector_soporte = tr(res.sv_indices,:);
+margen = 1 / (w * w');
+
+el vector de pesos = Sumatorio(Todos los vectores soporte[n]) cn α*n Xn (tema 4 diapositiva 6, primera equacion)
+Humbral = 2xsqr(α*) (tema 4 diapositiva 7)
