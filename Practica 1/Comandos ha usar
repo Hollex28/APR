@@ -1,4 +1,4 @@
-octave
+octave-cli
 load data/mini/tr.dat
 load data/mini/trlabels.dat
 graphics_toolkit gnuplot
