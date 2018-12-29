@@ -1,8 +1,6 @@
 #!/usr/bin/octave -qf
 # Ejercicio 3 Practica 1
 
-C = 1000;
-
 
 plot(1);
 pause;
@@ -12,10 +10,11 @@ pause;
 load data/mini/tr.dat   # tr
 load data/mini/trlabels.dat # trlabels
     
-
+C = 1000;
+	
 #Entrenamiento de las muestras
 
-res = svmtrain(trlabels,tr,'-t 0 -c 10');
+res = svmtrain(trlabels,tr,'-t 0 -c 1000');
 lagrange = res.sv_coef;
     
 # Vectores soporte
