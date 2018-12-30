@@ -10,11 +10,11 @@ pause;
 load data/mini/tr.dat   # tr
 load data/mini/trlabels.dat # trlabels
     
-C = 1000;
+C = .1;
 	
 #Entrenamiento de las muestras
 
-res = svmtrain(trlabels,tr,'-t 0 -c 1000');
+res = svmtrain(trlabels,tr,'-t 0 -c 0.1');
 lagrange = res.sv_coef;
     
 # Vectores soporte
@@ -68,6 +68,10 @@ plot(
 	tr(tolerancia_margen!=0,1), tr(tolerancia_margen!=0,2), "xk",
 	res.SVs(tolerancia_margen_sv==0,1),res.SVs(tolerancia_margen_sv==0,2), "+k"
 );
+el_texto = [num2str(tolerancia_margen) repmat([", "], size(trlabels)(1), 1) num2str(multiplicadores_lagrange)];
+
+text(tr(:,1), tr(:,2), el_texto);
+pause();
 pause;
 
 
