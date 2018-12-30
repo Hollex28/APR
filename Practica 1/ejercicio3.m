@@ -68,5 +68,6 @@ plot(
 	tr(tolerancia_margen!=0,1), tr(tolerancia_margen!=0,2), "xk",
 	res.SVs(tolerancia_margen_sv==0,1),res.SVs(tolerancia_margen_sv==0,2), "+k"
 );
+pause;
 
 
