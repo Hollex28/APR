@@ -10,11 +10,11 @@ function terror = TasaError(fe,fle,fp,flp,numGaus)
 	
 	dataApr = zscore(datApr);
 	etiqApr = etqApr + 1;
-	[numVec dim] = size(dataApr)
-	numClas = max(etiqApr)
+	[numVec dim] = size(dataApr);
+	numClas = max(etiqApr);
 
 	grafo = [ 0 1 1 ; 0 0 1 ; 0 0 0 ];
-	numNodos = length(grafo)
+	numNodos = length(grafo);
 	tallaNodos = [numClas numGaus dim];
 	nodosDiscretos = [1 2];
 	redB = mk_bnet(grafo, tallaNodos, 'discrete', nodosDiscretos);
@@ -49,6 +49,6 @@ function terror = TasaError(fe,fle,fp,flp,numGaus)
 		end
 	end
 	npruebas=length(dataTest)
-	terror= npruebas - terror %% El numero de fallos es la diferencia entre el numero de pruebas y resultados corretos
+	terror %% El numero de fallos es la diferencia entre el numero de pruebas y resultados corretos
     PorcentajeError = terror/npruebas
 end

@@ -1,0 +1,45 @@
+Resultados 
+
+Muestras = 1381
+
+Numero de Gaussianas =2
+TasaError = 636
+Tasa Error % = 46.05%
+
+Numero de Gaussianas = 3
+TasaError = 680
+Tasa Error % = 49.30%
+
+Numero de Gaussianas =4
+TasaError = 598
+Tasa Error % = 44.30%
+
+Numero de Gaussianas =6
+TasaError = 603
+Tasa Error % = 42.94%
+
+Numero de Gaussianas =8
+TasaError = 602
+Tasa Error % = 43.59%
+
+Numero de Gaussianas =10
+TasaError = 529
+Tasa Error % = 38.31%
+
+Numero de Gaussianas = 15
+TasaError = 516
+Tasa Error % = 37.36%
+
+Numero de Gaussianas = 20
+TasaError = 517
+Tasa Error % = 37.44
+
+Numero de Gaussianas = 30
+TasaError = 509
+Tasa Error % = 36.86 %
+
+Numero de Gaussianas = 50 /*** Esto Da un Error resultados poco fiables ******likelihood decreased from 46600.4553 to 46598.6032!
+
+TasaError = 539
+Tasa Error % = 39.03
+
