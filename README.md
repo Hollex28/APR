@@ -5,4 +5,4 @@ Practica 0 sin hacer
 
 Practica 1 Finalizada
 
-Practica 2 Empezada
+Practica 2 Practicamente Finalizada, falta hacer los test y bibliografia
