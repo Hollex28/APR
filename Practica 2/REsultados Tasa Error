@@ -38,6 +38,10 @@ Numero de Gaussianas = 30
 TasaError = 509
 Tasa Error % = 36.86 %
 
+Numero de Gaussianas = 40
+TasaError = 498
+Tasa Error % = 36.06 %
+
 Numero de Gaussianas = 50 /*** Esto Da un Error resultados poco fiables ******likelihood decreased from 46600.4553 to 46598.6032!
 
 TasaError = 539
